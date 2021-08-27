@@ -1,0 +1,32 @@
+footer {
+  height: 137px;
+  background-color: #C32D4D;
+  text-align: center;
+}
+
+#nav {
+  display: inline-block;
+  margin: 40px auto 20px;
+  font-size: 16;
+
+}
+
+#nav ul {
+  display: flex;
+}
+
+#nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+}
+
+#nav a:hover{
+  opacity: 0.8;
+}
+
+.copyright {
+  color: #f9b1c0;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}

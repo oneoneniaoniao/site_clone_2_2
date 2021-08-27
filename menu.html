@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/header_style.css">
+  <link rel="stylesheet" href="./css/footer_style.css">
+  <link href="./css/menu_style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <header></header>
+  <div class="top_img">
+    <h1>Menu</h1>
+    <p>メニュー</p>
+  </div>
+  <main id="menu">
+    <div class="menu_item_wrapper">
+      <img src="/img/menu-coffee.jpg" alt="coffee pic">
+      <p class="menu_item" id="coffee">コーヒー</p>
+      <p class="menu_price">¥500</p>
+    </div>
+    <div class="menu_item_wrapper">
+      <img src="/img/menu-cafe-latte.jpg" alt="cafe latte pic">
+      <p class="menu_item">カフェラテ</p>
+      <p class="menu_price">¥500</p>
+    </div>
+    <div class="menu_item_wrapper">
+      <img src="/img/menu-flower-coffee.jpg" alt="flower-coffee pic">
+      <p class="menu_item">フラワーコーヒー</p>
+      <p class="menu_price">¥1000</p>
+    </div>
+    <div class="menu_item_wrapper">
+      <img src="/img/menu-flower-pudding.jpg" alt="flower-pudding pic">
+      <p class="menu_item">フラワープリン</p>
+      <p class="menu_price">¥500</p>
+    </div>
+    <div class="menu_item_wrapper">
+      <img src="/img/menu-flower.jpg" alt="menu-flower pic">
+      <p class="menu_item">コーヒー</p>
+      <p class="menu_price">¥500</p>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script>
+    //共通パーツ読み込み
+    $(function () {
+      $("header").load("header.html");
+      $("footer").load("footer.html");
+    });
+  </script>
+</body>
+
+</html>

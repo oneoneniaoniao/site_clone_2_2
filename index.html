@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/header_style.css">
+  <link rel="stylesheet" href="./css/footer_style.css">
+  <link href="./css/index_style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    //共通パーツ読み込み
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
+</head>
+
+<body>
+  <header id="header">
+  </header>
+
+  <div class="top_img">
+    <h1>Coffee & Flower</h1>
+    <p>コーヒーとお花のカフェ</p>
+  </div>
+  <main class="container">
+    <div>
+      <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
+        またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど。</p>
+      <div class="middle_nav"><a href="/menu.html">Menu</a><a href="/access.html">Access</a></div>
+      <div class="profile">
+        <img id="profile_img" src="img/profile.jpg" alt="profile_img">
+        <p>
+          そのころわたくしは、モリーオ市の博物局に勤めて居りました。十八等官でしたから役所のなかでも、ずうっと下の方でしたし俸給ほうきゅうもほんのわずかでしたが、受持ちが標本の採集や整理で生れ付き好きなことでしたから、わたくしは毎日ずいぶん愉快にはたらきました。殊にそのころ、モリーオ市では競馬場を植物園に拵こしらえ直すというので、その景色のいいまわりにアカシヤを植え込んだ広い地面が、切符売場や信号所の建物のついたまま、わたくしどもの役所の方へまわって来たものですから、わたくしはすぐ宿直という名前で月賦で買った小さな蓄音器と二十枚ばかりのレコードをもって、その番小屋にひとり住むことになりました。
+        </p>
+      </div>
+    </div>
+    <picture>
+      <source media="(min-width: 768px)" srcset="img/concept_pc.jpg">
+      <img src="img/concept_sp.jpg" alt="">
+    </picture>
+  </main>
+  <footer id="footer"></footer>
+
+</body>
+
+</html>

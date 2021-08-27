@@ -1,0 +1,99 @@
+/* 共通部分 */
+
+.top_img {
+  background-image: url(../img/bg-page-header_sp.jpg);
+  background-size: cover;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top_img h1 {
+  font-size: 32px;
+  color: #C32D4D;
+  text-shadow: 0 3px 6px rgba(195, 45, 77, 0.2);
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+
+.top_img p {
+  font-size: 11px;
+}
+
+.container {
+  margin: 40px 20px;
+  line-height: 1.8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* メニュー */
+
+main #menu {
+  margin-bottom: 25px;
+}
+
+.menu_item_wrapper {
+  width: calc((100% - 15px) / 2);
+  margin-bottom: 26px;
+  line-height: 1;
+}
+
+div.menu_item_wrapper p.menu_item {
+  color: #C32D4D;
+  margin: 9px 0 7px;
+}
+
+/* access */
+
+#access p:nth-child(2) {
+  margin: 37px 0 23px;
+}
+
+/* recruit */
+
+#recruit h2 {
+  font-size: 18px;
+  width: 100%;
+  padding-top: 4px;
+  margin: 0 auto 24px;
+  text-align: center;
+  line-height: 1;
+  font-weight: bold;
+}
+
+#recruit dl {
+  font-size: 15px;
+}
+
+#recruit dt {
+  font-weight: bold;
+  margin: 24px 0 12px;
+}
+
+#recruit dd {
+  border-bottom: 1px solid #E2E2e2;
+  padding-bottom: 23px;
+}
+
+#recruit ul {
+  list-style-type: inherit;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+#recruit ul ul {
+  list-style-type: circle;
+}
+
+#recruit a {
+  color: #C32D4D
+}
+
+#recruit a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
