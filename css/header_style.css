@@ -171,6 +171,7 @@ nav{
 
   nav ul li a{
     margin-left: 35px;
+    color: #333;
   }
   nav ul li a:visited{
     color: #333;
