@@ -3,6 +3,7 @@
 .top_img {
   background-image: url(../img/bg-page-header_sp.jpg);
   background-size: cover;
+  background-position: center;
   height: 160px;
   display: flex;
   justify-content: center;
@@ -25,21 +26,26 @@
 .container {
   margin: 40px 20px;
   line-height: 1.8;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
 }
 
 /* メニュー */
 
-main #menu {
+#menu {
   margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .menu_item_wrapper {
   width: calc((100% - 15px) / 2);
   margin-bottom: 26px;
   line-height: 1;
+}
+
+.menu_item_wrapper img {
+  width: 100%;
 }
 
 div.menu_item_wrapper p.menu_item {
@@ -96,4 +102,73 @@ div.menu_item_wrapper p.menu_item {
 #recruit a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+
+  .top_img {
+    background-image: url(../img/bg-page-header_pc.jpg);
+    height: 200px;
+  }
+
+  .top_img h1 {
+    font-size: 48px;
+  }
+
+  .top_img p {
+    font-size: 14px;
+  }
+
+  .container {
+    margin: 70px 30px 20px;
+  }
+
+  /* メニュー */
+  #menu_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #menu {
+    justify-content: flex-start;
+    width: 1100px;
+  }
+
+
+
+  .menu_item_wrapper {
+    width: calc((100% - 60px) / 3 );
+    margin-right: 30px;
+    margin-bottom: 50px;
+  }
+
+  .menu_item_wrapper:nth-child(3n){
+    margin-right: 0;
+  }
+
+  /* アクセス */
+
+  .access_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+  }
+
+  #access{
+    max-width: 1100px;
+  }
+
+  #access p:nth-child(2){
+    font-size: 15px;
+    margin-top: 28px;
+  }
+
+  
+
+
+
 }

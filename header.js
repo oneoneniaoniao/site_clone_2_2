@@ -1,22 +1,55 @@
 $(function () {
-  $("#nav-open").on("click", function () {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $("#nav-content").removeClass("open").fadeOut(0);
+  //ハンバーガーメニュー
+  $('#nav-open').on('click', function () {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $('#nav-content').removeClass('open');
+      $("#title").removeClass("invisible");
     } else {
-      $(this).addClass("active");
-      $("#nav-content").fadeIn(300).addClass("open");
+      $(this).addClass('active');
+      $('#nav-content').addClass('open');
+      $("#title").addClass("invisible");
     }
   });
 });
 
-$(function(){
-  $('#nav-content .category li a').each(function(){
-      var $href = $(this).attr('href');
-      if(location.href.match($href)) {
+const $windowWidth = window.innerWidth;
+$(function () {
+  if ($windowWidth >= 768) {
+    $("#title").removeClass("invisible")
+  }
+})
+
+
+$(function () {
+  console.log(location.href)
+  let $matched = false;
+  $('#nav-content .category li a').each(function () {
+    const $href = $(this).attr('href');
+    if (location.href.match($href)) {
       $(this).addClass('active');
-      } else {
+      $matched = true;
+    } else {
       $(this).removeClass('active');
-      }
+    }
   });
+  if ($matched===false) {
+    $("#home").addClass("active");
+  }
+});
+
+$(function () {
+  let $matched = false;
+  $('#gnavPC .gnavPC-list li a').each(function () {
+    const $href = $(this).attr('href');
+    if (location.href.match($href)) {
+      $(this).addClass('active');
+      $matched = true;
+    } else {
+      $(this).removeClass('active');
+    }
+  });
+  if ($matched===false) {
+    $("#homePC").addClass("active");
+  }
 });

@@ -1,6 +1,7 @@
 .top_img {
   background-image: url(../img/bg-header_sp.jpg);
   background-size: cover;
+  background-position: center;
   height: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,23 +19,28 @@
 }
 
 .top_img h1 {
+  display: initial;
   opacity: 0;
   font-size: 48px;
   color: #C32D4D;
   text-shadow: 0 3px 6px rgba(195, 45, 77, 0.2);
   margin-bottom: 4px;
   line-height: 1.3;
-  -webkit-animation: fadeIn 1.5s ease-in-out 0.5s 1 normal forwards;
-          animation: fadeIn 1.5s ease-in-out 0.5s 1 normal forwards;
+  -webkit-animation: fadeIn 1.5s ease 0.5s 1 forwards;
+          animation: fadeIn 1.5s ease 0.5s 1 forwards;
+}
+
+.top_img h1 span {
+  font-size: 32px;
 }
 
 @-webkit-keyframes fadeIn {
-  0% {
+  from {
     opacity: 0;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
   }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -42,16 +48,20 @@
 }
 
 @keyframes fadeIn {
-  0% {
+  from {
     opacity: 0;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
   }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+#title.invisible {
+  display: none;
 }
 
 .container {
@@ -84,7 +94,64 @@
   font-size: 14px;
 }
 
+.profile p a {
+  color: #C32D4D;
+  text-decoration: underline;
+}
+
+.img-wrapper {
+  text-align: center;
+}
+
 picture img {
   margin-top: 26px;
+}
+
+@media screen and (min-width: 768px) {
+  .top_img {
+    background-image: url(../img/bg-header_pc.jpg);
+    height: 680px;
+  }
+  .top_img h1 {
+    font-size: 88px;
+  }
+  .top_img h1 span {
+    font-size: 64px;
+  }
+  .top_img p {
+    font-size: 18px;
+  }
+  main.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 70px 30px;
+  }
+  main.container .left-wrapper {
+    width: 50%;
+  }
+  main.container .left-wrapper div {
+    margin: 0 0 0 auto;
+    max-width: 555px;
+  }
+  main.container .left-wrapper div .middle_nav {
+    margin: 21px 0 30px;
+  }
+  main.container .img-wrapper {
+    width: 50%;
+    max-height: 635px;
+    overflow: hidden;
+    text-align: left;
+  }
+  main.container .img-wrapper img {
+    margin: 0 0 0 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: auto;
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=index_style.css.map */
