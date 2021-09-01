@@ -22,7 +22,6 @@ $(function () {
 
 
 $(function () {
-  console.log(location.href)
   let $matched = false;
   $('#nav-content .category li a').each(function () {
     const $href = $(this).attr('href');
