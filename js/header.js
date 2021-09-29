@@ -4,16 +4,14 @@ $(function () {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
       $('#nav-content').removeClass('open');
-      $("#title").removeClass("invisible");
     } else {
       $(this).addClass('active');
       $('#nav-content').addClass('open');
-      $("#title").addClass("invisible");
     }
   });
 });
 
-const $windowWidth = window.innerWidth;
+const $windowWidth = window.innerWidth
 $(function () {
   if ($windowWidth >= 768) {
     $("#title").removeClass("invisible")
